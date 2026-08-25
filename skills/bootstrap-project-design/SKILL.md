@@ -20,7 +20,11 @@ This skill establishes the core brand identity for a new project using the unive
 The exact workflow to follow when initializing brand identity:
 
 1. **Stop and Ask:** Ask the user to provide their brand logo (as an uploaded image file or URL).
-2. **Vision Extraction:** Analyze the provided logo image to extract the primary and secondary brand colors.
+2. **Extract Colors Reliably:** Analyze the provided logo to extract the primary and secondary brand colors.
+   - **For SVG logos:** Read the file text directly and extract the `fill` or `stroke` hex codes.
+   - **For PNG/JPG logos:** DO NOT rely on vision estimation (it hallucinates hex codes). Instead, strictly run the helper script: 
+     `python skills/bootstrap-project-design/scripts/extract_colors.py <path_to_logo>`
+     *(If the script fails due to a missing dependency, run `pip install Pillow` and try again).*
 3. **Ask for Details:** Ask the user for their brand name and their preferred fonts (Display, Body, Monospace).
 4. **Generate Documents:** Create project-specific `BRAND-CORE.md` and `DESIGN-TOKENS.md` files in the project root.
 
@@ -29,9 +33,9 @@ The exact workflow to follow when initializing brand identity:
 | Step | Action | Description |
 |------|--------|-------------|
 | 1 | Ask | Request logo image upload or URL from the user |
-| 2 | Extract | Use vision capabilities to identify the 2 main brand colors |
+| 2 | Extract | Run `extract_colors.py` for PNGs, or read SVG text directly |
 | 3 | Query | Ask for brand name and font preferences (Display/Body/Mono) |
-| 4 | Generate | Write `BRAND-CORE.md` and `DESIGN-TOKENS.md` |
+| 4 | Generate | Write `BRAND-CORE.md` and `DESIGN-TOKENS.md` using the templates |
 
 ## Implementation
 
