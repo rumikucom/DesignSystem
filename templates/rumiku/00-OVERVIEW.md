@@ -1,14 +1,12 @@
-# Universal Design System Reference
+# Rumiku Design Preset
 
-> A tech-stack-agnostic design system extracted from a production website. Drop these files into any project's root or `.agents/` directory and any AI coding agent will follow these design patterns automatically.
+> Design preset for the Rumiku brand. Extracted from the Rumiku production website. Captures the exact visual language including dark glassmorphism, neon lime + electric purple accents, and cinematic depth effects.
 
 ---
 
 ## Purpose
 
-This design system captures the exact visual language, spacing rules, component shapes, animation timing, and layout patterns from a reference production site. It is designed to be **universal** — meaning it works with any tech stack (React, Vue, Svelte, vanilla HTML/CSS, Flutter, etc.) and any CSS methodology (Tailwind, vanilla CSS, SCSS, CSS-in-JS, etc.).
-
-The COLOR VALUES, FONT NAMES, and BRAND CONTENT in these documents are **example reference values** taken from the original site. They demonstrate the system's structure. **Replace them with your own brand's values.**
+This preset captures the exact Rumiku visual language, spacing rules, component shapes, animation timing, and layout patterns from a reference production site. It is designed to be **universal** — meaning it works with any tech stack (React, Vue, Svelte, vanilla HTML/CSS, Flutter, etc.) and any CSS methodology (Tailwind, vanilla CSS, SCSS, CSS-in-JS, etc.).
 
 ### What IS Universal (Keep These)
 
