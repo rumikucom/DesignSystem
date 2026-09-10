@@ -8,6 +8,7 @@
 |----------|-------|-------|---------------------|
 | [`templates/rumiku/`](./templates/rumiku/) | **Rumiku** | Dark cinematic, glassmorphism | Neon lime + electric purple, dark mode default, film grain, ambient glows, ASCII topographic background |
 | [`templates/makeyo/`](./templates/makeyo/) | **Makeyo** | Colorful, flat, playful | 10 color schemes, Urbanist typography, 0px section gaps, sharp cards, 12px button radius, e-commerce focused |
+| [`templates/rokupi/`](./templates/rokupi/) | **Rokupi** | Friendly, readable, retail | Vibrant blue and pink, Fredoka typography, left-aligned text, no shadows, 1.4 calculated leading |
 
 ## What is a Design Template?
 
@@ -64,15 +65,15 @@ To create a new brand template:
 
 ## Template Comparison
 
-| Feature | Rumiku | Makeyo |
-|---------|--------|--------|
-| **Theme** | Dark mode default | Light + colorful |
-| **Font system** | 3 fonts (Outfit, Geist Sans, Geist Mono) | 1 font (Urbanist) |
-| **Color approach** | 2 accent colors + semantic tokens | 10 switchable color schemes |
-| **Section spacing** | 128px (generous) | 0px (zero-gap, color-divided) |
-| **Card style** | Glassmorphism, rounded (44px) | Flat, sharp corners (0px) |
-| **Shadows** | Glow shadows, soft shadows | Almost none |
-| **Visual effects** | Film grain, mesh gradients, ambient glows | None (flat design) |
-| **Button style** | Pill shape (rounded-full) | Soft rounded (12px) |
-| **Target use** | Landing pages, portfolios, SaaS | E-commerce, product stores |
-| **Animations** | Cinematic (1s+, scroll-reveal, parallax) | Quick & functional (200-600ms) |
+| Feature | Rumiku | Makeyo | Rokupi |
+|---------|--------|--------|--------|
+| **Theme** | Dark mode default | Light + colorful | High contrast Light & Dark |
+| **Font system** | 3 fonts (Outfit, Geist Sans, Geist Mono) | 1 font (Urbanist) | 1 font (Fredoka) |
+| **Color approach** | 2 accent colors + semantic tokens | 10 switchable color schemes | 2 strong primary accents (Blue & Pink) |
+| **Section spacing** | 128px (generous) | 0px (zero-gap, color-divided) | Generous padded block layout |
+| **Card style** | Glassmorphism, rounded (44px) | Flat, sharp corners (0px) | Soft rounded (12px), flat |
+| **Shadows** | Glow shadows, soft shadows | Almost none | None |
+| **Visual effects** | Film grain, mesh gradients, ambient glows | None (flat design) | None (flat design) |
+| **Button style** | Pill shape (rounded-full) | Soft rounded (12px) | Soft rounded (8-12px) |
+| **Target use** | Landing pages, portfolios, SaaS | E-commerce, product stores | Retail, F&B, highly readable |
+| **Animations** | Cinematic (1s+, scroll-reveal, parallax) | Quick & functional (200-600ms) | Fast, flat color transitions |
