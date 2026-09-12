@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "shadcn/tailwind.css";
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+
+  /* Default (Warm Cream) */
+  --color-background: rgb(var(--color-bg));
+  --color-foreground: rgba(var(--color-fg), 0.75);
+  
+  --color-primary: rgb(var(--color-btn));
+  --color-primary-foreground: rgb(var(--color-btn-txt));
+  
+  --color-secondary: rgb(var(--color-sec-btn));
+  --color-secondary-foreground: rgb(var(--color-sec-btn-txt));
+  
+  --color-card: rgb(var(--color-bg));
+  --color-card-foreground: rgba(var(--color-fg), 0.75);
+  
+  --color-border: rgba(var(--color-fg), 0.1);
+  --color-input: rgba(var(--color-fg), 0.55);
+  
+  --color-ring: rgba(var(--color-fg), 0.2);
+
+  /* Makeyo radii */
+  --radius-sm: 0px;
+  --radius: 0px;
+  --radius-md: 0px;
+  --radius-lg: 12px; /* Buttons */
+  --radius-full: 4rem; /* Badges */
+}
+
+:root {
+  /* Warm Cream (Scheme 1) */
+  --color-bg: 244, 241, 236;
+  --color-fg: 11, 11, 11;
+  --color-bg-contrast: 197, 181, 155;
+  --color-shadow: 18, 18, 18;
+  --color-btn: 0, 0, 0;
+  --color-btn-txt: 244, 241, 236;
+  --color-sec-btn: 244, 241, 236;
+  --color-sec-btn-txt: 31, 31, 31;
+  
+  --badge-fg: 11, 11, 11;
+  --badge-bg: 244, 241, 236;
+  --badge-border: 11, 11, 11;
+}
+
+.scheme-yellow {
+  --color-bg: 255, 204, 0;
+  --color-fg: 31, 33, 37;
+  --color-bg-contrast: 128, 102, 0;
+  --color-shadow: 18, 18, 18;
+  --color-btn: 255, 255, 255;
+  --color-btn-txt: 0, 0, 0;
+  --color-sec-btn: 255, 204, 0;
+  --color-sec-btn-txt: 255, 255, 255;
+  
+  --badge-fg: 31, 33, 37;
+  --badge-bg: 255, 204, 0;
+  --badge-border: 31, 33, 37;
+}
+
+.scheme-dark {
+  --color-bg: 25, 25, 25;
+  --color-fg: 255, 255, 255;
+  --color-bg-contrast: 153, 153, 153;
+  --color-shadow: 18, 18, 18;
+  --color-btn: 255, 255, 255;
+  --color-btn-txt: 31, 31, 31;
+  --color-sec-btn: 25, 25, 25;
+  --color-sec-btn-txt: 31, 31, 31;
+  
+  --badge-fg: 255, 255, 255;
+  --badge-bg: 25, 25, 25;
+  --badge-border: 255, 255, 255;
+}
+
+.scheme-orange {
+  --color-bg: 255, 97, 40;
+  --color-fg: 255, 255, 255;
+  --color-bg-contrast: 167, 44, 0;
+  --color-shadow: 255, 255, 255;
+  --color-btn: 255, 255, 255;
+  --color-btn-txt: 255, 97, 40;
+  --color-sec-btn: 255, 97, 40;
+  --color-sec-btn-txt: 255, 255, 255;
+  
+  --badge-fg: 255, 255, 255;
+  --badge-bg: 255, 97, 40;
+  --badge-border: 255, 255, 255;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+}
